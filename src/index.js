@@ -23,3 +23,4 @@ var $ = (function () {
 	return Constructor;
 
 })();
+console.log("Hello, World!")
