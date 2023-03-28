@@ -1,5 +1,5 @@
 
-var $ = (function () {
+var doc = (function () {
 
 	'use strict';
 
@@ -24,3 +24,4 @@ var $ = (function () {
 
 })();
 console.log("Hello, World!")
+
