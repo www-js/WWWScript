@@ -1,5 +1,5 @@
 
-var doc = (function () {
+export var doc = (function () {
 
 	'use strict';
 
@@ -16,6 +16,17 @@ var doc = (function () {
 			this.elems = document.querySelectorAll(selector);
 		}
 	};
+	Constructor.prototype.button = function (buttonName) {
+		this.each(function (item) {
+			item.buttonList.add(buttonName)
+		});
+	};
+	Constructor.prototype.each = function (callback) {
+		if (!callback || typeof callback !== 'function') return;
+		for (var i = 0; i < this.elems.length; i++) {
+			callback(this.elems[i], i);
+		}
+	};
 
 	/**
 	 * Return the constructor
@@ -23,5 +34,6 @@ var doc = (function () {
 	return Constructor;
 
 })();
-console.log("Hello, World!")
+
+
 
