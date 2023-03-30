@@ -16,3 +16,25 @@ npm install wwwscript
 ```
 
 ## Usage
+
+A basic program would look like this:
+```html
+<script src="https://www.package-hoarder.github.io/wwwscript/index.js"></script>
+<div id="main">
+	<h1>Success!</h1>
+</div>
+
+```
+
+```javascript
+doc("#main").addClass("example")
+
+```
+
+```css
+.example {
+  font-family: system-ui;
+  text-align: center;
+}
+```
+(of course you cant make separate files exept css)
