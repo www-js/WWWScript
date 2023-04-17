@@ -65,6 +65,8 @@ var doc = (function () {
 		});
 		return this;
 	};
+  
+  Constructer.prototype.write = document.write()
 
 	/**
 	 * Instantiate a new constructor
